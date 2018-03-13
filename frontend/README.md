@@ -1,3 +1,10 @@
+## Frontend
+
+The frontend of the twitter aggregator app.
+Please refer to the instructions in the parent folder for setup info.
+
+***
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

@@ -1,10 +1,10 @@
 import axios from "axios";
 import config from "../config";
 
+//Custom api for our app
 const api = {
   get: (url, query) => {
     query = (typeof query === "undefined" ? {} : query);
-    console.log(config);
     return axios({
       method: "get",
       baseURL: config.API_URL,

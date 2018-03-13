@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Tweet from './Tweet';
 
-import api from './api';
+import api from '../api';
 
 class App extends Component {
   state = {

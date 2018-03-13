@@ -9,15 +9,15 @@ The app requires both parts to run.
 
 ## Requirements
 
-Node JS
-npm or yarn
+1) Node JS
 
-A twitter app: `https://apps.twitter.com/`
+2) npm or yarn
+
+3) A twitter app: `https://apps.twitter.com/`
 
 ## Backend
 
-Within backend directory, run: `npm install`
-This installs all the dependencies for the backend.
+Within backend directory, run: `npm install` (this installs all the dependencies for the backend)
 
 Twitter requires authentication to use their API. This requires creating a twitter app in order to get the necessary keys and passwords to access the API. This tutorial can help walk you through these steps: `https://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/`
 
@@ -36,20 +36,22 @@ module.exports = {
 
 This file contains sensitive information now, so be careful not to share it with anyone else!
 
-Finally, to start the backend server, simple run: `npm start`
+Finally, to start the backend server, simply run: `npm start`
+
 And voila! Your backend server for communicating with twitter is now running.
 
 
 ## Frontend
 
-Within the frontend directory, run: `npm install`
-This installs all the dependencies for the frontend.
+Within the frontend directory, run: `npm install` (this installs all the dependencies for the frontend)
 
 To run the app, run: `npm start`
-This will open up a locally running version of your app at `http://localhost:3000`
-(If it does not automatically open, just type that url into your browser)
+
+This will open up a locally running version of your app at `http://localhost:3000` (if it does not automatically open, just type that url into your browser)
 
 And there you have it! You should be able to see the twitter aggregator in action in your browser.
+
+You may test the frontend by running: `npm test` (in frontend directory)
 
 # Production
 
@@ -61,14 +63,8 @@ Set up the backend on server.
 
 ## Frontend
 
-In the fontend update the environment variable to reference the backend server. You can do this by adding the following to your package.json:
-```js
-{
-  "env": {
-    "API_URL": "https://your-backend-url.com"
-  }
-}
-```
+In the fontend update the app config file to reference the backend server. To do this, open frontend/src/config.js and change the API_URL to that of your backend server.
+
 Then create the production build of the app by running: `npm build`
 
 Upload the code from the /build folder to a front end server and let the world enjoy your app!

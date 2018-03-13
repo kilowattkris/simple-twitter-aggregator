@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito'), local('Nunito-Regular'), url('Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito Light Italic';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Nunito-LightItalic'), url('Nunito-LightItalic.ttf') format('truetype');
+}

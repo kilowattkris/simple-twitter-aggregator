@@ -1,0 +1,14 @@
+{
+    "name": "twitter-aggregator",
+    "version": "1.0.0",
+    "description": "A simple node backend to utilize the twitter API.",
+    "author": "Kristine Tomlinson",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.16.2",
+        "twitter": "^1.7.1"
+    }
+}

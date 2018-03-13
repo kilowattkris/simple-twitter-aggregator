@@ -1,0 +1,22 @@
+.Tweet {
+    margin: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: left;
+}
+
+.Tweet .avatar {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 100%;
+}
+
+.Tweet>* {
+    margin: 5px;
+}
+
+.Tweet .h5 {
+    margin-right: 5px;
+}

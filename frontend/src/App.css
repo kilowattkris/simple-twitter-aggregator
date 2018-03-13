@@ -1,0 +1,101 @@
+.App {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(155deg, rgba(155, 222, 239, 1) 0%, rgba(26, 181, 242, 1) 100%);
+}
+
+.App .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.App .container>div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: width 0.5s ease;
+}
+
+.App .container.hasTweets>div {
+    width: 50%;
+    opacity: 1;
+}
+
+.App h1,
+.App h3 {
+    color: white;
+}
+
+.error {
+    color: #0d4c7d;
+    margin-bottom: 16px;
+    font-size: 1.15rem;
+}
+
+.form-control.placeholder {
+    font-style: italic;
+    color: #999;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.search {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tweets {
+    overflow-y: auto;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweets-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.tweets-container>div {
+    border-bottom: 1px solid #ccc;
+}
+
+.tweets-container>div:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 992px) {
+    .App {
+        height: auto;
+        min-height: 100%;
+    }
+    .App .container {
+        height: auto;
+    }
+    .App .container.hasTweets>div {
+        height: auto;
+        width: 100%;
+        opacity: 1;
+    }
+    .tweets-container {
+        max-height: 400px;
+    }
+}
